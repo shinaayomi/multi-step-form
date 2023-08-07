@@ -11,25 +11,35 @@ export default function PersonalInfo() {
           subtitle="Please provide your name, email address, and phone number."
         />
 
-        <label htmlFor="" className="block text-sm text-marine-blue font-ubuntu-medium mb-1">
-          Name
-        </label>
+        <div className="flex justify-between mb-1">
+          <label htmlFor="" className="text-sm text-marine-blue font-ubuntu-medium">
+            Name
+          </label>
+          <label className="text-sm text-strawberry-red font-ubuntu-medium" >This field is required</label>
+        </div>
         <input
           type="text"
           placeholder="e.g  Stephen King"
           className="w-full text-marine-blue font-ubuntu-medium border border-light-gray focus-visible:border-purplish-blue rounded-lg py-3 px-3 mb-6"
         />
-        <label htmlFor="" className="block text-sm text-marine-blue font-ubuntu-medium mb-1">
-          Email Address
-        </label>
+
+        <div className="flex justify-between mb-1">
+          <label htmlFor="" className="text-sm text-marine-blue font-ubuntu-medium">
+            Email Address
+          </label>
+          <label className="text-sm text-strawberry-red font-ubuntu-medium" >This field is required</label>
+        </div>
         <input
           type="email"
           placeholder="e.g  stephenking@lorem.com"
           className="w-full text-marine-blue font-ubuntu-medium border border-light-gray focus-visible:border-purplish-blue rounded-lg py-3 px-3 mb-6"
         />
-        <label htmlFor="" className="block text-sm text-marine-blue font-ubuntu-medium mb-1">
-          Phone Number
-        </label>
+        <div className="flex justify-between mb-1">
+          <label htmlFor="" className="block text-sm text-marine-blue font-ubuntu-medium mb-1">
+            Phone Number
+          </label>
+          <label className="text-sm text-strawberry-red font-ubuntu-medium" >This field is required</label>
+        </div>
         <input
           type="text"
           placeholder="e.g  +1 234 567 890"

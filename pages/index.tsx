@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import PersonalInfo from '@/src/layouts/PersonalInfo'
+import Head from 'next/head'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -116,6 +117,10 @@ export default function Home() {
     //   </div>
     // </main>
     <main>
+      <Head>
+        <title>Stepper</title>
+        <link rel="shortcut icon" href="/assets/images/favicon-32x32.png" type="image/x-icon" />
+      </Head>
       <PersonalInfo />
     </main>
   )

@@ -16,16 +16,24 @@ export default function PersonalInfo() {
         </label>
         <input
           type="text"
-          placeholder="Input your name"
-          className="w-full text-marine-blue text-lg font-ubuntu-medium border border-light-gray focus-visible:border-purplish-blue rounded-lg py-3 px-3 mb-6"
+          placeholder="e.g  Stephen King"
+          className="w-full text-marine-blue font-ubuntu-medium border border-light-gray focus-visible:border-purplish-blue rounded-lg py-3 px-3 mb-6"
         />
         <label htmlFor="" className="block text-sm text-marine-blue font-ubuntu-medium mb-1">
           Email Address
         </label>
         <input
+          type="email"
+          placeholder="e.g  stephenking@lorem.com"
+          className="w-full text-marine-blue font-ubuntu-medium border border-light-gray focus-visible:border-purplish-blue rounded-lg py-3 px-3 mb-6"
+        />
+        <label htmlFor="" className="block text-sm text-marine-blue font-ubuntu-medium mb-1">
+          Phone Number
+        </label>
+        <input
           type="text"
-          placeholder="Input your name"
-          className="w-full text-marine-blue text-lg font-ubuntu-medium border border-light-gray focus-visible:border-purplish-blue rounded-lg py-3 px-3 mb-6"
+          placeholder="e.g  +1 234 567 890"
+          className="w-full text-marine-blue font-ubuntu-medium border border-light-gray focus-visible:border-purplish-blue rounded-lg py-3 px-3 mb-6"
         />
         <div className="text-end mt-auto">
           <button className="h-12 w-[120px] text-white text-sm bg-marine-blue font-ubuntu-medium rounded-xl">

@@ -5,18 +5,34 @@ import Headings from "../components/Headings";
 export default function PersonalInfo() {
   return (
     <PagesLayout>
-      <Headings
-        title="Personal info"
-        subtitle="Please provide your name, email address, and phone number."
-      />
-      <label htmlFor="" className="block">
-        Name
-      </label>
-      <input
-        type="text"
-        placeholder="Input your name"
-        className="w-full border border-light-gray focus-visible:border-marine-blue rounded-lg py-3 px-3"
-      />
+      <form className="h-full flex flex-col">
+        <Headings
+          title="Personal info"
+          subtitle="Please provide your name, email address, and phone number."
+        />
+
+        <label htmlFor="" className="block text-sm text-marine-blue font-ubuntu-medium mb-1">
+          Name
+        </label>
+        <input
+          type="text"
+          placeholder="Input your name"
+          className="w-full text-marine-blue text-lg font-ubuntu-medium border border-light-gray focus-visible:border-purplish-blue rounded-lg py-3 px-3 mb-6"
+        />
+        <label htmlFor="" className="block text-sm text-marine-blue font-ubuntu-medium mb-1">
+          Email Address
+        </label>
+        <input
+          type="text"
+          placeholder="Input your name"
+          className="w-full text-marine-blue text-lg font-ubuntu-medium border border-light-gray focus-visible:border-purplish-blue rounded-lg py-3 px-3 mb-6"
+        />
+        <div className="text-end mt-auto">
+          <button className="h-12 w-[120px] text-white text-sm bg-marine-blue font-ubuntu-medium rounded-xl">
+            Next Step
+          </button>
+        </div>
+      </form>
     </PagesLayout>
   );
 }

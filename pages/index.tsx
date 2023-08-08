@@ -118,7 +118,7 @@ export default function Home() {
     // </main>
     <main>
       <Head>
-        <title>Stepper</title>
+        <title>Multi-tepper</title>
         <link rel="shortcut icon" href="/assets/images/favicon-32x32.png" type="image/x-icon" />
       </Head>
       <PersonalInfo />

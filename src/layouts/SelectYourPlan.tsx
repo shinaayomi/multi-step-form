@@ -44,7 +44,11 @@ export default function SelectYourPlan() {
                   <p className="text-marine-blue text-lg font-ubuntu-bold">
                     {plan.title}
                   </p>
-                  <p className="text-cool-gray text-xs pt-1">${plan.price}/mo</p>
+                  <p className="text-cool-gray text-sm pt-1">${plan.price}/mo</p>
+                  <div>
+                    <p className="text-cool-gray text-sm py-1">${plan.price}/mo</p>
+                    <p className="text-xs text-marine-blue font-ubuntu-bold">2 month free</p>
+                  </div>
                 </CardBody>
               </Card>
             ))}
@@ -53,8 +57,8 @@ export default function SelectYourPlan() {
             <p className="text-marine-blue text-sm font-ubuntu-medium">
               Monthly
             </p>
-            <Switch defaultSelected color={"primary"} aria-label="Automatic updates" />
-            <label className="switch">
+
+            <label className="app-switch">
               <input type="checkbox" />
               <span className="slider round"></span>
             </label>

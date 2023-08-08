@@ -40,7 +40,7 @@ export default function SelectYourPlan() {
                 <CardHeader className="justify-between">
                   <Avatar radius="full" size="md" src={plan.icons} />
                 </CardHeader>
-                <CardBody className="px-3 mt-10">
+                <CardBody className="px-3 mt-8">
                   <p className="text-marine-blue text-lg font-ubuntu-bold">
                     {plan.title}
                   </p>
@@ -53,7 +53,7 @@ export default function SelectYourPlan() {
               </Card>
             ))}
           </div>
-          <div className="flex justify-center items-center gap-4 bg-magnolia p-4 mt-5 rounded-xl">
+          <div className="flex justify-center items-center gap-4 bg-magnolia p-4 mt-8 rounded-xl">
             <p className="text-marine-blue text-sm font-ubuntu-medium">
               Monthly
             </p>

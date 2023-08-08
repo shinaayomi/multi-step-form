@@ -9,7 +9,7 @@ export default function PagesLayout({ children }: PropsWithChildren) {
           <AppNavBar />
         </div>
         <div className='md:col-span-2 px-4 md:px-0'>
-          <div className='h-full bg-white rounded-xl px-4 xl:px-20 md:px-10 md:py-10 py-5'>
+          <div className='h-full relative md:static top-[-70px] md:top-0 bg-white rounded-2xl px-4 xl:px-20 md:px-10 md:py-10 py-5'>
             {children}
           </div>
         </div>

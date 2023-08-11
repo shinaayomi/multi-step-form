@@ -23,19 +23,19 @@ export default function PickAddOns({
     {
       title: "Online service",
       subtitle: "Access to multiplayer games",
-      amount: "1",
+      amount: "5",
       id: 1,
     },
     {
       title: "Large storage",
       subtitle: "Extra 1TB of cloud save",
-      amount: "2",
+      amount: "10",
       id: 2,
     },
     {
       title: "Customizable Profile",
       subtitle: "Custom theme on your profile",
-      amount: "2",
+      amount: "20",
       id: 3,
     },
   ];
@@ -44,19 +44,19 @@ export default function PickAddOns({
     {
       title: "Online service",
       subtitle: "Access to multiplayer games",
-      amount: "1",
+      amount: "10",
       id: 1,
     },
     {
       title: "Large storage",
       subtitle: "Extra 1TB of cloud save",
-      amount: "2",
+      amount: "30",
       id: 2,
     },
     {
       title: "Customizable Profile",
       subtitle: "Custom theme on your profile",
-      amount: "2",
+      amount: "50",
       id: 3,
     },
   ];

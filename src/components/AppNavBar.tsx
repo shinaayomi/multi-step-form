@@ -37,10 +37,6 @@ export default function AppNavBar({
   ];
 
   const handleStepper = (val: number) => {
-    if (checkedList === null || checkedProduct?.length === 0) {
-      return;
-    }
-
     setStep(val);
 
     localStorage.setItem("navigation", JSON.stringify(val));

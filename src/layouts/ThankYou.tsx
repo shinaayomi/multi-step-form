@@ -9,14 +9,12 @@ export default function ThankYou({ setStep }: IProps) {
     // if (localStorage.getItem("reload") === "true") {
     //   setStep(0);
     // } else {
-
     //   localStorage.setItem("reload", "true");
     // }
-
-    const timer = setTimeout(() => {
-      setStep(0);
-    }, 50000);
-    return () => clearTimeout(timer);
+    // const timer = setTimeout(() => {
+    //   // setStep(0);
+    // }, 5000);
+    // return () => clearTimeout(timer);
   }, [setStep]);
 
   return (

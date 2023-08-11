@@ -37,9 +37,6 @@ export default function AppNavBar({
   ];
 
   const handleStepper = (val: number) => {
-    if (monthPlan === null && yearPlan === null) {
-      return;
-    }
     if (checkedList === null || checkedProduct?.length === 0) {
       return;
     }

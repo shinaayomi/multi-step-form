@@ -126,7 +126,9 @@ export default function PickAddOns({
             <label
               key={index}
               className={`flex items-center gap-4 border hover:border-purplish-blue rounded-lg md:p-4 p-3 cursor-pointer ${
-                picks.id ? "border-purplish-blue" : "border-light-gray"
+                checkedList[index] === picks.id
+                  ? "border-purplish-blue"
+                  : "border-light-gray"
               }`}
             >
               <input

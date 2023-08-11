@@ -5,17 +5,17 @@ interface IProps {
   setStep: (val: number) => void;
 }
 export default function ThankYou({ setStep }: IProps) {
-  // useEffect(() => {
-  //   // if (localStorage.getItem("reload") === "true") {
-  //   //   setStep(0);
-  //   // } else {
-  //   //   localStorage.setItem("reload", "true");
-  //   // }
-  //   // const timer = setTimeout(() => {
-  //   //   // setStep(0);
-  //   // }, 5000);
-  //   // return () => clearTimeout(timer);
-  // }, [setStep]);
+  useEffect(() => {
+    // if (localStorage.getItem("reload") === "true") {
+    //   setStep(0);
+    // } else {
+    //   localStorage.setItem("reload", "true");
+    // }
+    const timer = setTimeout(() => {
+      setStep(0);
+    }, 5000);
+    return () => clearTimeout(timer);
+  }, [setStep]);
 
   return (
     <div className="h-full flex flex-col justify-center items-center text-center py-16">

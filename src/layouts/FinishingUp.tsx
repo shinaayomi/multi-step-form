@@ -70,7 +70,6 @@ export default function FinishingUp({
       return;
     }
     nextStep(4);
-    nextStep(0);
 
     localStorage.setItem("reload", "false");
   };

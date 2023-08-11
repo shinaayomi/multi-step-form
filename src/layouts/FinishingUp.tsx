@@ -138,7 +138,7 @@ export default function FinishingUp({
         </div>
       </article>
 
-      <div className="flex justify-between items-center mt-auto">
+      <div className="flex justify-between items-center mt-auto fixed md:static bottom-0 start-0 end-0 bg-white p-4 md:p-0">
         <button
           onClick={() => prevStep(2)}
           className="text-cool-gray hover:text-marine-blue font-ubuntu-medium"

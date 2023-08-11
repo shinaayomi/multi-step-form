@@ -168,7 +168,7 @@ export default function PersonalInfo({ nextStep }: IProps) {
         placeholder="e.g  +1 234 567 890"
         className="w-full text-marine-blue font-ubuntu-medium border border-light-gray focus-visible:border-purplish-blue rounded-lg py-3 px-3 mb-6"
       />
-      <div className="text-end mt-auto">
+      <div className="text-end mt-auto fixed md:static bottom-0 start-0 end-0 bg-white p-4 md:p-0">
         <button
           onClick={handleValidation}
           className="h-12 w-[120px] text-white text-sm bg-marine-blue font-ubuntu-medium rounded-xl"

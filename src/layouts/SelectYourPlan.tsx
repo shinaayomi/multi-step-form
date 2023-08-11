@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Headings from "../components/Headings";
 import { Avatar, Card, CardBody, CardHeader } from "@nextui-org/react";
+import Image from "next/image";
 
 interface IProps {
   nextStep: (val: number) => void;
@@ -171,7 +172,14 @@ export default function SelectYourPlan({
                     }`}
                   >
                     <CardHeader className="justify-between">
-                      <Avatar radius="full" size="md" src={plan.icons} />
+                      <Image
+                        src={plan.icons}
+                        alt={plan.title}
+                        width={40}
+                        height={40}
+                        priority
+                        className="rounded-full"
+                      />
                     </CardHeader>
                     <CardBody className="px-3">
                       <div className="h-20 flex flex-col">
@@ -207,7 +215,14 @@ export default function SelectYourPlan({
                     }`}
                   >
                     <CardHeader className="justify-between">
-                      <Avatar radius="full" size="md" src={plan.icons} />
+                      <Image
+                        src={plan.icons}
+                        alt={plan.title}
+                        width={40}
+                        height={40}
+                        priority
+                        className="rounded-full"
+                      />
                     </CardHeader>
                     <CardBody className="px-3">
                       <div className="h-20 flex flex-col">
